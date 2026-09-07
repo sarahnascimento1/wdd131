@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Sarah Nascimento</title>
+    <meta name="description" content="Fundamentos da Web Dinâmica realizada pela aluna Sarah Nascimento">
+    <meta name="author" content="Sarah Nascimento">
+    <link rel="stylesheet" href="estilos/base.css">
+    <script src="scripts/obterdatas.js" defer></script>
+
+
+    <!-- fontes: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>Sarah Nascimento</h1>
+    <header>
+        <h1>
+            <span class="tema">WDD 131: Fundamentos da Web Dinâmica - Sarah Nascimento</span>
+        </h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sarah-n-533898158/">Linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-tim/1?lang=por">Escritura</a>
+                </li>
+                <li><a href="#">Projeto Final</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Sarah Nascimento</h1>
+        <section class="card">
+            <h2>Sobre mim</h2>
+            <div class="sobre-mim">
+                <div class="item">
+                    <p>Meu nome é Sarah, sou estudante de Desenvolvimento Web e atualmente estou em processo de
+                        transição de carreira para a
+                        área de tecnologia. No momento, atuo na área administrativa, onde desenvolvi habilidades
+                        importantes como organização,
+                        comunicação e trabalho em equipe. Tenho gosto por tecnologia e design.
+                    </p>
+                    <img class="foto-perfil" src="imagens/foto-perfil.jpg" alt="Essa sou eu Sarah">
+                </div>
+
+
+                <div class="item2">
+                    <h3>São Paulo, Brasil</h3>
+                    <figure>
+                        <img src="imagens/saopaulo.jpg" alt="Foto do Parque Villa Lobos em São Paulo">
+                        <figcaption>Parque Villa Lobos em São Paulo</figcaption>
+                    </figure>
+
+                    <p>Gosto muito de caminhar e andar de bicicleta com a minha família no Parque Villa-Lobos, em São
+                        Paulo.
+                        A cidade de São Paulo é muito movimentada, com diversos comércios, shoppings e opções de lazer,
+                        oferecendo sempre algo
+                        novo para explorar.</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="card2">
+            <h2>Recursos Web Dev</h2>
+            <nav class="lista">
+                <ul>
+                    <li><a
+                            href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/What_is_JavaScript">Java
+                            Script</a></li>
+
+                    <li><a href="https://github.com/sarahnascimento1">Meu Github</a></li>
+
+                    <li><a href="https://www.coursera.org/">Coursera</a></li>
+
+                    <li><a href="https://www.udemy.com/?utm_medium=na&gad_source=1">Udemy</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <p> ©<span id="anoatual"></span>🍂Sarah Nascimento🍂São Paulo</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #fcfcd7;
+    font-family: "Valley Sans", serif;
+
+}
+
+header {
+    background-color: #f04158;
+    padding-top: 0.9rem;
+
+
+}
+
+header h1 {
+    padding-bottom: 1rem;
+    color: #fcfcd7;
+}
+
+.tema {
+    display: block;
+    text-align: center;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    background: #f1db42;
+    padding: 0.1rem;
+    list-style: none
+}
+
+.menu ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: black;
+
+
+}
+
+nav ul li a:hover {
+    background-color: #95d0b8;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #fcfcd7;
+    padding: 2rem;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+main h1 {
+    grid-column: 1 / 3;
+    justify-self: center;
+    padding-bottom: 10px;
+    color: #da253d;
+
+
+}
+
+.card {
+
+    border: 20px solid black;
+    background-color: #fcfcd7;
+
+}
+
+.card,
+.card2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #95d0b8;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.card h2,
+.card2 h2 {
+    background-color: #95d0b8;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    color: #4b4104;
+
+
+
+}
+
+.item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+.item p {
+    flex: 1;
+
+}
+
+.item img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #587a6d;
+
+
+
+}
+
+.item2 img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #587a6d;
+
+
+}
+
+.item2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+
+
+}
+
+
+.item2 p {
+    align-self: center;
+    margin-top: -1rem;
+
+}
+
+
+
+.item2 h3 {
+    grid-column: 1 / 3;
+    text-align: center;
+    border-bottom: 1px solid #67be9b;
+    width: 26%;
+    margin: 0 auto -10px auto;
+    color: #4b4104;
+
+}
+
+.item2 figure {
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    color: #4b4104;
+    margin-top: -20px;
+
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+
+.sobre-mim {
+    display: grid;
+    gap: 20px;
+    line-height: 1.2;
+    grid-template-columns: auto;
+    align-items: stretch;
+    padding: 1rem;
+}
+
+.card2 {
+    background: #fcfcd7;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lista {
+    margin-top: auto;
+    margin-bottom: 7rem;
+    padding-left: 2rem;
+}
+
+.lista ul {
+    color: black;
+    padding-left: 1.5rem;
+    line-height: 2.6;
+}
+
+.lista a {
+    color: black;
+}
+
+
+footer {
+    background-color: #67be9b;
+    padding: 0.5rem;
+    text-align: center;
+}
