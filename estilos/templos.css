@@ -76,6 +76,10 @@ a {
     gap: 1rem;
 }
 
+nav {
+    display: flex;
+}
+
 .navegacao a {
     display: inline-block;
     width: fit-content;
