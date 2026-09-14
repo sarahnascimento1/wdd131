@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+header {
+    background-color: #50cccc;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.titulo-header {
+    font-size: 2.5rem;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: black;
+
+}
+
+#menu::before {
+    content: '☰';
+
+}
+
+#menu.open::before {
+    content: '❎';
+}
+
+.navegacao a:hover {
+    background-color: rgb(41, 221, 191);
+    color: black;
+    font-weight: 700;
+}
+
+.navegacao {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+}
+
+.navegacao a {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.3rem 0.5rem;
+}
+
+.navegacao.open {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.open a {
+    display: block;
+}
+
+.fotos {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+
+
+}
+
+.fotos img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+
+}
+
+figcaption {
+    text-align: center;
+}
+
+
+
+figcaption {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #50cccc;
+    padding: 8px;
+    text-align: center;
+    margin-top: 3rem;
+}
