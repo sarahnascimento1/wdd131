@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Sarah Nascimento - S03</title>
+    <meta name="description" content="Fundamentos da Web Dinâmica realizada pela aluna Sarah Nascimento - Semana 03">
+    <meta name="author" content="Sarah Nascimento">
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Nova Zelândia</h1>
+    </header>
+    <main>
+        <div class="fotos">
+            <picture>
+                <source srcset="imagens/imagem-grande1.webp" media="(min-width: 1000px)">
+                <source srcset="imagens/imagem-media.webp" media="(min-width: 500px)">
+                <img src="imagens/imagem-pequena.webp" alt="Nova Zelândia" width="500" height="250">
+            </picture>
+
+            <section class="bloco data">
+                <h2>Data</h2>
+                <dl>
+                    <dt>Area:</dt>
+                    <dd>268.680 km2</dd>
+
+                    <dt>Population:</dt>
+                    <dd>5.346.150</dd>
+
+                    <dt>Capital:</dt>
+                    <dd>Wellington</dd>
+
+                    <dt>Languages:</dt>
+                    <dd>Inglês, Maori e Língua de Sinais Neozelandesa</dd>
+
+                    <dt>Currency:</dt>
+                    <dd>Dólar da Nova Zelândia (NZD)</dd>
+
+                    <dt>Time Zone:</dt>
+                    <dd>UTC+12</dd>
+
+                    <dt>Calling Code:</dt>
+                    <dd>+64</dd>
+
+                    <dt>Internet TLD:</dt>
+                    <dd>.nz</dd>
+                </dl>
+
+            </section>
+
+            <section class="bloco weather">
+                <h2>Weather <span class="emoji" aria-hidden="true">⛅</span></h2>
+                <img class="clima" src="imagens/icone.svg" alt="Condição do clima" width="24" height="24">
+                <dl>
+                    <dt>Temperature:</dt>
+                    <dd>13°C</dd>
+
+                    <dt>Conditions:</dt>
+                    <dd>Clear Sky</dd>
+
+                    <dt>Wind:</dt>
+                    <dd>37 km/h</dd>
+
+                    <dt>Wind Chill:</dt>
+                    <dd id="sensacaoTermica"></dd>
+                </dl>
+
+            </section>
+
+        </div>
+
+    </main>
+    <footer>
+        <p> ©<span id="anoatual"></span> 🍂 Sarah Nascimento 🍂 Nova Zelândia</p>
+        <p class="ultima-mod"> Last Modification: <span id="ultimaModificacao"></span></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+    :root {
+        --espaco: 1rem;
+        --primeira-cor: rgba(25, 181, 142, 0.7);
+        --segunda-cor: rgb(0, 185, 189, 0.7);
+        --terceira-cor: #fffbd4;
+        --quarta-cor: rgb(210, 231, 204, 0.9);
+        --quinta-cor: rgb(3, 40, 73);
+        --sexta-cor: rgb(23, 93, 110);
+
+    }
+
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    h1 {
+        text-align: center;
+        padding: 1.5rem;
+        background-color: var(--primeira-cor);
+        color: var(--quinta-cor);
+    }
+
+    main {
+        margin-top: var(--espaco);
+
+    }
+
+    body {
+        background-color: var(--terceira-cor);
+        font-family: 'Lato';
+    }
+
+    .fotos picture img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .fotos {
+        position: relative;
+        min-height: 400px;
+
+    }
+
+    .bloco {
+        position: absolute;
+        background: var(--terceira-cor);
+        padding: var(--espaco);
+        border-radius: 8px;
+        margin: 2rem;
+    }
+
+    .data {
+        top: 20px;
+        left: 20px;
+        max-width: 280px;
+    }
+
+    .weather {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .weather,
+    .data {
+        overflow: visible;
+        border-radius: 0;
+        background: var(--quarta-cor);
+        box-shadow: 0 0 20px var(--sexta-cor);
+    }
+
+    .weather h2,
+    .data h2 {
+
+        position: absolute;
+        top: -0.4rem;
+        left: -0.7rem;
+        right: 2.5rem;
+        margin-top: var(--espaco);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--segunda-cor);
+        color: var(--quinta-cor);
+        padding: 0.75rem var(--espaco);
+
+    }
+
+    .weather dl,
+    .data dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.4rem 0.75rem;
+        padding: var(--espaco);
+
+        padding-top: 4rem;
+
+    }
+
+    .weather dt,
+    .data dt {
+        font-weight: bold;
+        text-align: right;
+    }
+
+
+    .clima {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    footer {
+        background-color: var(--primeira-cor);
+        text-align: center;
+        padding: var(--espaco);
+        font-weight: bold;
+    }
+
+
+
+
+    @media (min-width: 768px) {
+
+        .clima {
+            display: none;
+        }
+
+    }
+
+    @media (max-width: 767px) {
+        .emoji {
+            display: none;
+        }
+
+        .bloco {
+            position: static;
+            width: fit-content;
+            margin: var(--espaco) auto;
+        }
+
+        .fotos picture img {
+
+            border-bottom: 6px solid var(--segunda-cor);
+        }
+
+        .data,
+        .weather {
+            top: auto;
+            left: auto;
+            bottom: auto;
+            right: auto;
+            box-shadow: none;
+            background: transparent;
+        }
+
+        .data h2,
+        .weather h2 {
+            position: static;
+            left: auto;
+            right: auto;
+            top: auto;
+            margin-top: 0;
+            box-shadow: none;
+
+            display: block;
+            text-align: center;
+            background-color: transparent;
+
+        }
+
+        .weather dl,
+        .data dl {
+            grid-template-columns: auto auto;
+            width: fit-content;
+            margin: 0 auto;
+            text-align: right;
+            padding-top: var(--espaco);
+        }
+
+        .weather dt,
+        .data dt {
+            text-align: right;
+        }
+
+        .weather dd,
+        .data dd {
+            text-align: left;
+        }
+
+        .clima {
+            display: block;
+            margin: 0 auto;
+        }
+
+
+    }
