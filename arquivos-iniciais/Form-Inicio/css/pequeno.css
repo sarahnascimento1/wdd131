@@ -1,0 +1,114 @@
+/* Impede ajustes no tamanho da fonte após mudanças de orientação no IE do Windows Phone e no iOS. */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/* ----------- aplica um modelo natural de layout com box-sizing a todos os elementos -------------- */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAV --------------*/
+nav {
+    background-color: #666;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {border-bottom: solid 1px #333;}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li.ativo a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+.fw1 fieldset {
+    margin: 2rem 0;
+    border-radius: 6px;
+    padding: 0.5rem 2%;
+}
+
+.fw1 legend {
+    color: rgb(17, 87, 8);
+    padding: 0.5rem;
+}
+
+.fw1 label {
+    display: block;
+    padding: 1rem;
+    color: brown;
+    font-size: 0.9rem;
+}
+
+.fw1 div {
+    padding-top: 1.2rem;
+    color: rgb(11, 95, 11);
+    font-size: 0.9rem;
+}
+
+.fw1 [type="text"],
+.fw1 [type="tel"],
+.fw1 [type="email"],
+.fw1 [type="url"],
+.fw1 [type="date"],
+.fw1 select,
+.fw1 [type="number"]
+ {
+    background-color: rgb(237, 241, 241);
+    display: block;
+    border: 1px solid rgb(191, 219, 217);
+    border-radius: 6px;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.fw1 input[type="radio"],
+.fw1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.fw1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(90deg, #dfe220, #f8d404 50%, #ebe724);
+    border-radius: 6px;
+    padding: .8rem;
+    margin: -1rem 0 2rem calc(2% + 18px);
+    width: calc(96% - 36px);
+    max-width: 400px;
+    
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
