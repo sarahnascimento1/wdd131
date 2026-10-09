@@ -18,28 +18,29 @@
 <body>
 
     <main>
-        <h1>Avaliação do Produto</h1>
+        <header><h1>Avaliação do Produto</h1></header>
         <form method="get" action="avaliacao.html" class="formulario">
             <fieldset>
                 <legend>Feedback sobre o Produto</legend>
-                <label>
-                    Seu Nome <span class="opcional">(opcional)</span><input type="text" name="nome" id="name">
+                <label for="name" class="rotulo">
+                    Seu Nome <span class="opcional">(opcional)</span>
                 </label>
+                <input type="text" name="nome" id="name">
 
-                <label class="rotulo">Queremos saber sua opnião <span class="opcional">(opcional)</span></label>
+                <label for="opniao" class="rotulo">Queremos saber sua opnião <span class="opcional">(opcional)</span></label>
                 <textarea name="opniao" id="opniao" rows="5" cols="40"></textarea>
             </fieldset>
 
             <fieldset>
                 <legend>Avaliação</legend>
                
-                    <label class="rotulo">Selecione o Produto:</label>
-                    <select name="produto" id="produto">
+                    <label for="produto" class="rotulo">Selecione o Produto:</label>
+                    <select name="produto" id="produto" required>
                         <option value="" disabled selected>Selecione um produto</option>
                     </select>
 
 
-                    <label class="frase-star">Quantas estrelas esse produto merece?</label>
+                    <div class="frase-star">Quantas estrelas esse produto merece?</div>
                     <div class="estrelas">
                         <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                         <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
@@ -48,13 +49,14 @@
                         <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                     </div>
 
-                    <label>Data de Instalação <input type="date" name="data" id="data" required></label>
+                    <label for="data" class="rotulo">Data de Instalação</label>
+                    <input type="date" name="data" id="data" required>
 
                     <div class="opcoes">Quais recursos você achou úteis no produto? (Marque as opções que deseja)</div>
-                    <label><input type="checkbox" name="duracao" id="duracao" value="sim">Durabilidade</label>
-                    <label><input type="checkbox" name="facilidade" id="facilidade" value="sim">Facilidade de Uso</label>
-                    <label><input type="checkbox" name="desempenho" id="desempenho" value="sim">Desempenho</label>
-                    <label><input type="checkbox" name="design" id="design" value="sim">Design</label>
+                    <label for="duracao"><input type="checkbox" name="duracao" id="duracao" value="sim">Durabilidade</label>
+                    <label for="facilidade"><input type="checkbox" name="facilidade" id="facilidade" value="sim">Facilidade de Uso</label>
+                    <label for="desempenho"><input type="checkbox" name="desempenho" id="desempenho" value="sim">Desempenho</label>
+                    <label for="design"><input type="checkbox" name="design" id="design" value="sim">Design</label>
             </fieldset>
             <input type="submit" value="Enviar Avaliação">
 

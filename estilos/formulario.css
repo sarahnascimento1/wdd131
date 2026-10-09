@@ -69,7 +69,7 @@
     }
 
     .formulario .opcoes {
-        padding-top: 0.7rem;
+        padding-top: 2rem;
         font-size: 1rem;
         color: rgb(107, 66, 20);
     }
@@ -124,8 +124,11 @@
         background-image: linear-gradient(#90df50, #90df50);
         border-radius: 6px;
         padding: .8rem;
-        font-size: 1rem;
+        font-size: 1.3rem;
+        font-weight: bold;
         width: 100%;
+        color: #362c11;;
+
 
     }
 
@@ -161,7 +164,9 @@
     }
 
     .formulario .frase-star {
-        padding-top: 2rem;
+        padding: 2rem 0 1.2rem;
+        font-size: 1rem;
+        color: rgb(107, 66, 20);
     }
 
 
