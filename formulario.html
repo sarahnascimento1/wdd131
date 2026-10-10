@@ -40,19 +40,19 @@
                     </select>
 
 
-                    <div class="frase-star">Quantas estrelas esse produto merece?</div>
-                    <div class="estrelas">
-                        <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
-                        <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
-                        <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
-                        <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
-                        <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                    <div class="frase-star" id="rotulo-estrelas">Quantas estrelas esse produto merece?</div>
+                    <div class="estrelas" role="radiogroup" aria-labelledby="rotulo-estrelas"> 
+                        <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"><span class="sr-only">5 estrelas</span></label>
+                        <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"><span class="sr-only">4 estrelas</span></label>
+                        <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"><span class="sr-only">3 estrelas</span></label>
+                        <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"><span class="sr-only">2 estrelas</span></label>
+                        <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"><span class="sr-only">1 estrelas</span></label>
                     </div>
 
                     <label for="data" class="rotulo">Data de Instalação</label>
                     <input type="date" name="data" id="data" required>
 
-                    <div class="opcoes">Quais recursos você achou úteis no produto? (Marque as opções que deseja)</div>
+                    <div class="opcoes">Quais recursos você achou úteis no produto? <span class="opcao">(Marque as opções que deseja)</span></div>
                     <label for="duracao"><input type="checkbox" name="duracao" id="duracao" value="sim">Durabilidade</label>
                     <label for="facilidade"><input type="checkbox" name="facilidade" id="facilidade" value="sim">Facilidade de Uso</label>
                     <label for="desempenho"><input type="checkbox" name="desempenho" id="desempenho" value="sim">Desempenho</label>
@@ -64,7 +64,7 @@
     </main>
 
     <footer>
-        <p> ©<span id="anoatual"></span>🍃Sarah Nascimento🍃São Paulo</p>
+        <p> ©<span id="anoatual"></span> | Sarah Nascimento | São Paulo</p>
         <p id="ultimaModificacao"></p>
     </footer>
 </body>

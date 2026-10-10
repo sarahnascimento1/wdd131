@@ -11,7 +11,7 @@
     }
 
     body {
-        background-color: #ffebfd;
+        background-color: #ffeaff;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -19,63 +19,70 @@
 
     main {
         padding-inline: 1rem;
+
     }
 
 
 
-    main, h1 {
+    main,
+    h1 {
         width: 100%;
         max-width: 400px;
         margin-inline: auto;
         flex: 1;
-        
+
     }
 
     h1 {
         text-align: center;
-        background-color: #80b852;
+        background-color: #ed5672;
         margin-block: 1rem;
         padding: 1rem;
-        border-radius: 10px;
-        color: #362c11;
-        
+        border-radius: 6px;
+        color: #160e32;
+
     }
 
     .formulario {
         display: block;
         width: 100%;
-        
+
     }
 
     .formulario fieldset {
         margin: 1rem 0;
-        border: 1px solid rgb(107, 66, 20);
+        border: 1px solid #881332;
         border-radius: 10px;
         padding: 1rem;
-        background-color: #fff5de;
+        background-color: #ffeaff;
     }
 
     .formulario legend {
         padding: 0.5rem;
-        color: rgb(13, 99, 42);
+        color: #881332;
         font-size: 1.3rem;
     }
 
-    .formulario label{
+    .formulario label {
         display: block;
         padding: 1rem 0;
-        color: rgb(107, 66, 20);
+        color: #320606;
         font-size: 1rem;
     }
 
     .formulario .opcoes {
         padding-top: 2rem;
         font-size: 1rem;
-        color: rgb(107, 66, 20);
+        color: #320606;
     }
 
     .opcional {
-        color: rgb(170, 116, 45);
+        color: #320606;
+        font-style: italic;
+    }
+
+    .opcao {
+        font-style: italic;
     }
 
     .formulario .rotulo {
@@ -93,8 +100,8 @@
     .formulario textarea,
     .formulario select {
         display: block;
-        background-color: rgb(255, 250, 181);
-        border: 1px solid gray;
+        background-color: #f8dac2;
+        border: 1px solid #881332;
         border-radius: 5px;
         padding: 0.60rem;
         width: 100%;
@@ -121,13 +128,13 @@
 
     .formulario input[type="submit"] {
         border: none;
-        background-image: linear-gradient(#90df50, #90df50);
+        background-image: linear-gradient(#ef8779, #ca655c);
         border-radius: 6px;
         padding: .8rem;
         font-size: 1.3rem;
         font-weight: bold;
         width: 100%;
-        color: #362c11;;
+        color: #320606;
 
 
     }
@@ -142,7 +149,7 @@
         flex-direction: row-reverse;
         justify-content: flex-end;
         padding-left: 1rem;
-        
+
     }
 
     .estrelas input {
@@ -153,7 +160,7 @@
     .estrelas label {
         padding: 0.2rem;
         font-size: 2.1rem;
-        color: #ccc;
+        color: #575a4d;
         cursor: pointer;
         line-height: 0;
         margin-bottom: 2rem;
@@ -163,30 +170,48 @@
         content: "★";
     }
 
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
     .formulario .frase-star {
         padding: 2rem 0 1.2rem;
         font-size: 1rem;
-        color: rgb(107, 66, 20);
+        color: #320606;
     }
 
 
-    .estrelas input:checked ~ label,
+    .estrelas input:checked~label,
     .estrelas label:hover,
-    .estrelas label:hover ~ label{
-        color: #e6da3b;
+    .estrelas label:hover~label {
+        color: #af9817;
     }
 
     .formulario input[type="submit"]:hover {
         cursor: pointer;
-        background-image: linear-gradient(#c5df50, #e6da3b);
+        background-image: linear-gradient(#fed71d, #e0bd16);
+    }
+
+    .formulario input[type="checkbox"] {
+        accent-color: #ed5672;
     }
 
     footer {
         text-align: center;
-        background-color: rgb(187, 125, 44);
+        background-color: #e27d9b;
         margin-top: 2rem;
         padding: 0.7rem;
-       
+        font-weight: bold;
+        color: #000000;
+
     }
 
     .agradecimento {
@@ -216,10 +241,3 @@
             font-size: 1.5rem;
         }
     }
-
-
-
-
-
-
-
