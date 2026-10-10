@@ -29,6 +29,7 @@ const produtos = [
     }
 ];
 
+
 const anoAtual = new Date().getFullYear();
 
 document.getElementById("anoatual").textContent = anoAtual;
