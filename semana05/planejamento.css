@@ -15,6 +15,10 @@ header {
 
 }
 
+main {
+    background-color: #fcebb6;
+}
+
 header img {
     border-radius: 6rem;
     /* border: 1px solid brown;  */
@@ -44,6 +48,6 @@ a {
 
 
 footer {
-    background-color: #e8608c;
+    background-color: #5bb7b6;
     text-align: center;
 }

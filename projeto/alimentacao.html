@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Curiosidades Sobre Pets e E-commerce</title>
+    <meta name="description" content="Um site sobre Pets com dicas, Curiosidades">
+    <meta name="author" content="Sarah Nascimento">
+
+    <link rel="stylesheet" href="estilo/projeto.css">
+    <script src="script/projeto.js" defer></script>
+
+    <!-- fonts header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- font main -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.jpg" alt="logo do site pet mania">
+        <nav class="menu">
+            <ul id="link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="alimentacao.html">Alimentação</a></li>
+                <li><a href="bemestar.html">Bem Estar</a></li>
+                <li><a href="favoritos.html"><img class="favorito-coracao" src="imagens/coracao.svg"
+                            alt="icone coracao"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid">
+
+        <section id="alimentacao">
+
+            <div class="curiosidades">
+
+                <h2>Você Sabia? 💭</h2>
+
+                <p id="curiosidade">
+                    Clique no botão e descubra uma curiosidade sobre alimentação dos pets! 👇
+                </p>
+
+                <button id="botao-curiosidade">
+                    Descubra uma curiosidade!
+                </button>
+            </div>
+            <img class="gato" src="imagens/gato-comendo.jpg" alt="Gato comendo ração">
+
+            <div class="racao">
+
+                <h3>Confira Nossas Sugestões de Produtos</h3>
+
+                <div class="produto1" data-id="1" data-nome="Ração Premier Gatos Filhotes">
+                    <a href="https://www.cobasi.com.br/racao-premier-formula-gatos-filhotes-frango-31155547/p?srsltid=AU7gw4W2E-04VbAHl570LOWFXiGYfpqXzWExNRjdAEtCanB3Gy-fsONV"
+                        target="_blank" rel="nooper noreferrer"><img src="imagens/racao-gato.jpeg"
+                            alt="ração para gatos filhotes"></a>
+
+                    <p>R$ 76,99</p>
+                    <button class="favorito" type="button" aria-pressed="false"><span>Adicione aos Favoritos</span><img
+                            class="icone-coracao" src="imagens/coracao-adicao.svg" alt=""></button>
+
+
+                </div>
+
+                <div class="produto2" data-id="2" data-nome="Ração Gran Plus Cães Adultos">
+                    <a href="https://www.cobasi.com.br/racao-gran-plus-gourmet-caes-adultos-mini-ovelha-e-arroz-3928402/p?idsku=950041"
+                        target="_blank" rel="nooper noreferrer"><img src="imagens/racao-dog.webp"
+                            alt="ração para cachorros"></a>
+
+                    <p>R$ 27,99</p>
+                    <button class="favorito" type="button" aria-pressed="false"><span>Adicione aos Favoritos</span><img
+                            class="icone-coracao" src="imagens/coracao-adicao.svg" alt=""></button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="informacoes">
+            <span class="frase-alimentacao">🍉Alimentação Saudável</span>
+
+            <div class="dicas-alimentacao">
+                <div class="titulo">10 Dicas para Uma Alimentação Saúdável</div>
+                <p> <span class="num">1</span> Escolha um alimento completo e balanceado
+                    Prefira alimentos adequados à espécie, à idade e às necessidades do animal. Uma alimentação completa
+                    ajuda a
+                    fornecer os
+                    nutrientes necessários para a saúde.<br><br>
+
+                    <span class="num">2</span> Mantenha água fresca disponível
+                    A hidratação é essencial para o funcionamento do organismo. Troque a água regularmente e mantenha o
+                    recipiente
+                    limpo.<br><br>
+
+                    <span class="num">3</span> Ofereça porções adequadas
+                    A quantidade de alimento varia conforme o peso, a idade, a atividade física e as condições de saúde
+                    do pet. Siga as
+                    orientações da embalagem e do médico-veterinário.<br><br>
+
+                    <span class="num">4</span>Tenha cuidado com frutas e petiscos
+                    Algumas frutas podem ser oferecidas em pequenas quantidades, mas nem todas são seguras. Uvas e
+                    passas, por exemplo,
+                    podem causar intoxicação em cães.<br><br>
+
+                    <span class="num">5</span>Respeite as necessidades de cada espécie
+                    Cães e gatos possuem necessidades nutricionais diferentes. Gatos, por exemplo, precisam de
+                    nutrientes específicos,
+                    como
+                    a taurina, em sua alimentação.<br><br>
+
+                    <span class="num">6</span> Evite alimentos tóxicos
+                    Chocolate, uvas, passas e alimentos com xilitol estão entre os perigos para cães. Cebola e alho
+                    também podem ser
+                    tóxicos
+                    para cães e gatos.<br><br>
+
+                    <span class="num">7</span> Previna o sobrepeso.
+                    O excesso de calorias pode contribuir para a obesidade e outros problemas de saúde. Controle os
+                    petiscos e incentive
+                    atividades adequadas à idade e à condição física do animal.<br><br>
+
+                    <span class="num">8</span>Consulte um médico-veterinário.
+                    Antes de mudar a alimentação ou oferecer dietas caseiras, procure orientação profissional para
+                    garantir que o animal
+                    receba todos os nutrientes de que precisa.<br><br>
+
+                    <span class="num">9</span>Escolha rações de qualidade: Prefira rações do tipo Premium ou Super
+                    Premium, que possuem maior digestibilidade e melhor
+                    aproveitamento de nutrientes em comparação às do tipo Standard.<br><br>
+
+                    <span class="num">10</span>Deixar o saco de ração aberto ou despejar o conteúdo em potes plásticos
+                    oxida a gordura do alimento. Esse processo
+                    destrói os nutrientes e gera radicais livres que causam inflamações e problemas hepáticos nos pets.
+                    Para proteger o
+                    alimento, mantenha a ração bem fechada dentro da própria embalagem original, que possui barreiras
+                    contra luz e umidade,
+                    e coloque o saco inteiro no container.
+
+                </p>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        © Sarah Nascimento | Pet Mania | 2026 ©
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Curiosidades Sobre Pets e E-commerce</title>
+    <meta name="description" content="Um site sobre Pets com dicas, Curiosidades">
+    <meta name="author" content="Sarah Nascimento">
+
+    <link rel="stylesheet" href="estilo/projeto.css">
+    <script src="script/projeto.js" defer></script>
+
+    <!-- fonts header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- font main -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.jpg" alt="logo do site pet mania">
+        <nav class="menu">
+            <ul id="link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="alimentacao.html">Alimentação</a></li>
+                <li><a href="bemestar.html">Bem Estar</a></li>
+                <li><a href="favoritos.html"><img class="favorito-coracao" src="imagens/coracao.svg"    alt="icone coracao"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="bem-estar">
+
+        <section id="formulario-vacina">
+            <span class="saude">🐾Bem Estar e Saúde</span>
+
+            <h1>" Na Pet Mania, acreditamos que todo pet merece uma vida repleta de cuidado, carinho e diversão. Porque quem faz parte
+            da família merece o melhor! "</h1>
+
+            <div class="frase-vacina">
+            ✍️ Registre e acompanhe aqui as vacinas do seu melhor amigo
+            </div>
+            <div>
+                <form method="get" action="favoritos.html" class="formulario">
+                    <div>
+                        <h2><img src="imagens/heart.svg" alt="">Pet Mania</h2>
+                        <span class="carteirinha">Carteirinha de Vacinação 💉</span>
+                    </div>
+            
+                    <fieldset>
+            
+                        <legend>Informações do Pet</legend>
+            
+                        <label for="nomePet">Nome do pet:</label>
+                        <input type="text" id="nomePet" name="nomePet" required>
+            
+                        <label for="especie">Espécie:</label>
+                        <select name="especie" id="especie" required>
+                            <option value="">Selecione</option>
+                            <option value="cachorro">Cachorro</option>
+                            <option value="gato">Gato</option>
+                        </select>
+            
+                        <label for="peso">Peso:</label>
+                        <input type="number" id="peso" name="peso">
+            
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade">
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend>Responsável pelo Pet</legend>
+                        <label for="nomeDono">Dono do Pet:</label>
+                        <input type="text" id="nomeDono" name="nomeDono" required>
+            
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone">
+            
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend>Dados de Vacinação</legend>
+            
+                        <label for="vacina">Nome da Vacina:</label>
+                        <input type="text" id="vacina" name="vacina" required>
+            
+                        <label for="dataAplicacao">Data da Aplicação:</label>
+                        <input type="date" id="dataAplicacao" name="dataAplicacao" required>
+            
+                        <label for="proximaDose">Próxima Dose:</label>
+                        <input type="date" id="proximaDose" name="proximaDose" required>
+            
+                    </fieldset>
+                    <button type="submit">Cadastrar Vacina</button>
+            
+                </form>
+            </div>
+
+        </section>
+        
+        <section class="dicas2">
+            <img class="brincando" src="imagens/cat-brincando3.jpeg" alt="gatinho brincando">
+
+            <h2>Dicas de Bem Estar</h2>
+
+            <p><span class="num">1</span>1 Exercícios e atividades físicas:
+            Passeios, brincadeiras e atividades ajudam a manter o peso saudável, fortalecer os músculos e reduzir o estresse.Respeite sempre a idade e os limites do pet.<br><br><br>
+
+            <span class="num">2</span> Estimulação mental:
+            Brinquedos interativos, desafios e atividades que estimulam a curiosidade evitam o tédio e contribuem para o equilíbrio
+            emocional.<br><br><br>
+
+            <span class="num">3</span> Sono e descanso de qualidade:
+            Assim como os humanos, os animais precisam descansar! Ofereça um ambiente confortável, tranquilo e seguro para dormir.<br><br><br>
+
+            <span class="num">4</span>Higiene e cuidados com a pelagem:
+            Escovação, cuidados com as unhas e higiene bucal ajudam a prevenir desconfortos e problemas de saúde. Os banhos devem
+            respeitar as necessidades de cada espécie.<br><br><br>
+
+            <span class="num">5</span>Acompanhamento veterinário:
+            Consultas preventivas, vacinação e controle de parasitas são essenciais para proteger a saúde e identificar possíveis
+            problemas precocemente.
+        </p>
+
+        <img class="pastor" src="imagens/dog-filhote.jpeg" alt="cachorrinho filhote pastor alemao" loading="lazy">
+
+        </section>
+                   
+    </main>
+    <footer>
+        © Sarah Nascimento | Pet Mania | 2026 ©
+    </footer>
+</body>
+
+</html>
