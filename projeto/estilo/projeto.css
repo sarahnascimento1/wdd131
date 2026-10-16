@@ -13,6 +13,13 @@
     box-sizing: border-box;
 }
 
+.home,
+.salvos,
+.bem-estar,
+.grid {
+    background-color: #fff5ff;
+}
+
 
 header {
 
@@ -34,7 +41,7 @@ header {
     background-color: var(--cor-clara);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
 
 }
 
@@ -48,7 +55,7 @@ header {
     gap: 0;
     padding-bottom: 1rem;
     background-color: #38bb6a;
-    
+
 }
 
 .galeria img {
@@ -63,8 +70,8 @@ header img {
     border-radius: 5rem;
     border: 3px solid rgb(161, 39, 39);
     box-shadow: 0 0 20px gray;
-    
-    
+
+
 }
 
 
@@ -109,7 +116,7 @@ header img {
 
 
 #apresentacao {
-   
+
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     align-items: stretch;
@@ -121,7 +128,7 @@ header img {
     max-width: none;
 }
 
- #alimentacao {
+#alimentacao {
     grid-column: 2;
     grid-row: 1;
     grid-template-columns: 1fr;
@@ -130,9 +137,9 @@ header img {
     font-family: "Outfit", sans-serif;
     font-size: 1.15rem;
     line-height: 1.7;
- }
+}
 
- #informacoes {
+#informacoes {
     grid-column: 1;
     grid-row: 1;
     align-items: stretch;
@@ -142,22 +149,22 @@ header img {
     font-family: "Outfit", sans-serif;
     color: var(--cor-texto);
     max-width: none;
- }
+}
 
- .titulo {
+.titulo {
     font-family: "Nunito", sans-serif;
     font-size: clamp(2rem, 4vw, 2.8rem);
     font-weight: 800;
     margin-bottom: 2rem;
     border-left: 8px solid rgb(216, 160, 40);
     padding-left: 1rem;
- }
+}
 
- .dicas-alimentacao {
+.dicas-alimentacao {
     padding: 2rem;
     font-size: 1.15rem;
-    
- }
+
+}
 
 .num {
     display: inline-grid;
@@ -170,7 +177,7 @@ header img {
     font-weight: 800;
     font-size: 1rem;
     border-radius: 50%;
-    
+
 }
 
 .apresentacao-opcoes a {
@@ -188,7 +195,7 @@ header img {
     line-height: 1.7;
 }
 
-.frase-alimentacao { 
+.frase-alimentacao {
     display: inline-block;
     background-color: rgb(40, 117, 63);
     color: var(--cor-clara);
@@ -196,7 +203,7 @@ header img {
     border-radius: 999px;
     margin: 2rem;
     font-size: 1.15rem;
-    
+
 }
 
 #curiosidade {
@@ -212,7 +219,7 @@ header img {
     margin-bottom: 10px;
     color: rgb(9, 114, 79);
     font-family: "Nunito", sans-serif;
-    
+
 }
 
 #curiosidade span {
@@ -220,7 +227,7 @@ header img {
     color: #1a1b55;
 }
 
-.curiosidades { 
+.curiosidades {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -246,11 +253,12 @@ header img {
 
 
 
-.apresentacao-texto h2, .curiosidades h2 {
-    font-family: "Nunito", sans-serif;   
+.apresentacao-texto h2,
+.curiosidades h2 {
+    font-family: "Nunito", sans-serif;
     font-size: clamp(2rem, 4vw, 2.8rem);
     font-weight: 800;
-    
+
 }
 
 .destaque {
@@ -263,8 +271,8 @@ header img {
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
-    
-    
+
+
 }
 
 .apresentacao-opcoes li {
@@ -276,7 +284,7 @@ header img {
     font-weight: 500;
     box-shadow: 0 4px 10px rgb(197, 196, 196);
     cursor: pointer;
-    
+
 }
 
 .apresentacao-opcoes li:hover {
@@ -300,7 +308,7 @@ header img {
     align-items: center;
     gap: 2.5rem;
     margin: 2rem 0rem 2rem 0rem;
-    
+
 }
 
 .apresentacao-fotos img {
@@ -313,16 +321,16 @@ header img {
 }
 
 #botao-curiosidade {
-    background:linear-gradient(180deg, #e8453a, #c0281d);
+    background: linear-gradient(180deg, #e8453a, #c0281d);
     color: #ffffff;
     box-shadow: 0 6px 0 #af2720,
-    0 12px 20px rgba(238, 56, 44, 0.4),
-    inset 0 2px 0 rgba(255, 255, 255, 0.35);
+        0 12px 20px rgba(238, 56, 44, 0.4),
+        inset 0 2px 0 rgba(255, 255, 255, 0.35);
     padding: 1rem;
     border-radius: 999px;
     border: none;
     cursor: pointer;
-    font-family: "Nunito",sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
 
 }
@@ -342,7 +350,7 @@ header img {
     transform: translateX(40px) rotate(8deg);
     opacity: 0;
     transition: opacity 1.3s ease-in;
-    
+
 }
 
 .racao {
@@ -375,12 +383,13 @@ header img {
     border-radius: 1rem;
 }
 
-.produto1, .produto2 {
+.produto1,
+.produto2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    
+
 }
 
 .favorito {
@@ -411,7 +420,7 @@ header img {
     transform: translateX(-40px) rotate(-6deg);
     opacity: 0;
     transition: opacity 1.3s ease-in;
-    
+
 
 }
 
@@ -421,8 +430,8 @@ header img {
     transform: translateX(40px) rotate(8deg);
     opacity: 0;
     transition: opacity 1.3s ease-in;
-    
-    
+
+
 }
 
 .foto1.visivel,
@@ -459,7 +468,7 @@ footer {
     font-family: "Nunito", sans-serif;
     font-size: 1.30rem;
     margin: 2rem 0 0 2rem;
-    
+
 }
 
 .frase-vacina {
@@ -469,7 +478,6 @@ footer {
     text-align: center;
     font-size: 1.25rem;
     color: var(--cor-texto)
-
 }
 
 #formulario-vacina {
@@ -516,7 +524,7 @@ footer {
 
 }
 
-.formulario legend{
+.formulario legend {
     font-size: 1.20rem;
     font-weight: 500;
     color: #770909;
@@ -524,12 +532,13 @@ footer {
 
 .formulario label {
     display: block;
-    margin-top: 1rem;   
+    margin-top: 1rem;
     font-weight: 500;
     color: #2c1e18;
 }
 
-.formulario input, .formulario select {
+.formulario input,
+.formulario select {
     width: 100%;
     box-sizing: border-box;
     padding: 0.5rem;
@@ -555,7 +564,7 @@ footer {
 
 .formulario button:hover {
     background: rgb(58, 148, 23);
-    
+
 }
 
 .brincando {
@@ -595,7 +604,7 @@ footer {
     font-family: "Outfit", sans-serif;
     color: var(--cor-texto);
     font-size: 1.25rem;
-    
+
 }
 
 
@@ -629,7 +638,8 @@ footer {
     margin-bottom: 0.4rem;
 }
 
-#lista-favoritos, #lista-vacinas {
+#lista-favoritos,
+#lista-vacinas {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -649,8 +659,8 @@ footer {
     font: inherit;
     font-weight: 600;
     cursor: pointer;
-    }
-    
+}
+
 .vacina-salva button:hover {
     background: #c02f0b;
     color: #fff;
@@ -687,7 +697,7 @@ footer {
 }
 
 .photos {
-    
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     gap: 1rem;
@@ -705,7 +715,7 @@ footer {
 }
 
 .final {
-    
+
     font-family: "Outfit", sans-serif;
     font-size: clamp(2rem, 4vw, 20rem);
     font-weight: 800;
@@ -713,7 +723,7 @@ footer {
     border-left: 8px solid rgb(216, 160, 40);
     padding: 1rem;
     color: #3d0557;
-    
+
 }
 
 @media (max-width: 768px) {
@@ -743,26 +753,35 @@ footer {
         justify-content: center;
     }
 
-   
+
 
     .apresentacao-fotos {
         gap: 2.5rem;
         padding: 2rem 1rem;
     }
 
-    .foto1, .foto2 {width: min(400px, 80%)}
+    .foto1,
+    .foto2 {
+        width: min(400px, 80%)
+    }
 
-    .foto1{ transform: rotate(-4deg);}
-    .foto2{transform: rotate(4deg);}
+    .foto1 {
+        transform: rotate(-4deg);
+    }
 
-    #lista-vacinas, .grid {
+    .foto2 {
+        transform: rotate(4deg);
+    }
+
+    #lista-vacinas,
+    .grid {
         grid-template-columns: 1fr;
     }
 
     #informacoes {
         grid-column: 1;
         grid-row: 2;
-        min-height: auto;   
+        min-height: auto;
     }
 
     .frase-alimentacao {
@@ -799,13 +818,16 @@ footer {
     #bem-estar {
         grid-template-columns: 1fr;
         gap: 0;
-    }    
-    
-    #formulario-vacina, .dicas2 {
+    }
+
+    #formulario-vacina,
+    .dicas2 {
         margin: 1rem;
     }
 
-    .saude {margin: 0;}
+    .saude {
+        margin: 0;
+    }
 
     #formulario-vacina h1 {
         margin: 1.5rem 0;
@@ -825,7 +847,8 @@ footer {
         width: 100%;
     }
 
-    .brincando, .pastor {
+    .brincando,
+    .pastor {
         display: block;
         width: 80%;
         margin: 1.5rem auto;
