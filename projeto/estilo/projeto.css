@@ -15,7 +15,7 @@
 
 .home,
 .salvos,
-.bem-estar,
+#bem-estar,
 .grid {
     background-color: #fff5ff;
 }
@@ -34,15 +34,6 @@ header {
 .favorito-coracao {
     border: none;
     box-shadow: none;
-}
-
-
-.grid {
-    background-color: var(--cor-clara);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-
 }
 
 
@@ -251,6 +242,12 @@ header img {
     border-radius: 999px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
 
 
 .apresentacao-texto h2,
@@ -454,7 +451,6 @@ footer {
 #bem-estar {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: var(--cor-clara);
     gap: 5rem;
 }
 
@@ -692,9 +688,6 @@ footer {
     padding: 1.5rem 1rem;
 }
 
-.salvos {
-    background-color: var(--cor-clara);
-}
 
 .photos {
 
